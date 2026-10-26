@@ -1,6 +1,6 @@
 # itsm-core
 
-[![Python package](https://github.com/OWNER/itsm-core/actions/workflows/package.yml/badge.svg)](https://github.com/OWNER/itsm-core/actions/workflows/package.yml)
+[![Python package](https://github.com/iplexa/itsm-core/actions/workflows/package.yml/badge.svg)](https://github.com/iplexa/itsm-core/actions/workflows/package.yml)
 
 Лицензия: GNU GPL версии 3 или более поздней — см. [LICENSE](LICENSE).
 
@@ -29,12 +29,11 @@ python -m pip install -e .
 Как зависимость из отдельного GitHub-репозитория:
 
 ```bash
-python -m pip install "itsm-core @ git+https://github.com/OWNER/itsm-core.git@v0.1.0"
+python -m pip install "itsm-core @ git+https://github.com/iplexa/itsm-core.git@v0.1.0"
 ```
 
-Замените `OWNER` на организацию или пользователя GitHub и укажите опубликованный
-тег версии. Для приватного GitHub-репозитория настройте SSH-доступ либо токен
-в CI/среде установки.
+Укажите опубликованный тег версии. Для приватного GitHub-репозитория настройте
+SSH-доступ либо токен в CI/среде установки.
 
 ## Подключение
 
@@ -208,5 +207,4 @@ async with HelpClient(SimpleOneTransport(settings)) as help_api:
 Версия пакета задаётся в `pyproject.toml`. Для релиза обновите её, проверьте
 сборку wheel, создайте git-тег вида `vX.Y.Z` и опубликуйте релиз в GitHub.
 CI при push и pull request собирает wheel и проверяет импорт установленного
-пакета. Перед загрузкой в отдельный репозиторий замените `OWNER` в бейдже на
-имя пользователя или организации GitHub.
+пакета.
